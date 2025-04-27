@@ -90,4 +90,43 @@
    "Surface": 10,
    "Picture": ""
  }
+  {
+   "Name": "BO NIX",
+   "Year": "2024 TOPPS CHROME",
+   "Variation": "PINK ALL-ETCH REFRACTOR #CAEBN",
+   "Category": "GEM",
+   "Grade": 10,
+   "ID": 1000008,
+   "Centering": 10,
+   "Corners": 10,
+   "Edges": 10,
+   "Surface": 10,
+   "Picture": ""
+ }
+  {
+   "Name": "JAYDEN DANIELS",
+   "Year": "2024 JAYDEN DANIELS",
+   "Variation": "#67",
+   "Category": "MINT",
+   "Grade": 9,
+   "ID": 1000009,
+   "Centering": 9,
+   "Corners": 10,
+   "Edges": 10,
+   "Surface": 10,
+   "Picture": ""
+ }
+  {
+   "Name": "LUIS ABRAM",
+   "Year": "2021-22 MOSAIC FIFA RD/WC",
+   "Variation": "RED & GREEN CHOICE #43",
+   "Category": "GEM",
+   "Grade": 10,
+   "ID": 1000007,
+   "Centering": 10,
+   "Corners": 10,
+   "Edges": 10,
+   "Surface": 10,
+   "Picture": ""
+ }
 ]

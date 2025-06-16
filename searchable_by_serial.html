@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graded Cards by Serial Number</title>
+    <style>
+        body {{ font-family: Arial; padding: 20px; }}
+        input {{ padding: 8px; width: 300px; margin-bottom: 10px; }}
+        table {{ border-collapse: collapse; width: 100%; }}
+        th, td {{ border: 1px solid #ccc; padding: 8px; text-align: left; }}
+        th {{ background-color: #444; color: white; }}
+        tr:hover {{ background-color: #f2f2f2; }}
+    </style>
+</head>
+<body>
+    <h2>Search Graded Cards by Serial Number</h2>
+    <input type="text" id="searchInput" placeholder="Enter Serial Number...">
+
+    <table id="cardTable">
+        <thead><tr><th>Year</th><th>Brand</th><th>Player Name</th><th>Card Title</th><th>Card Number</th><th>Parallel</th><th>Team</th><th>Serial Number</th><th>Grade</th><th>Centering</th><th>Corners</th><th>Edge</th><th>Surface</th></tr></thead>
+        <tbody><tr><td>2024</td><td>Panini Mosaic</td><td>Rome Odunze</td><td>NFL Debut</td><td>#281</td><td>Green Prizm</td><td>Chicago Bears</td><td>1000000</td><td>GEM MINT 9.5</td><td>9</td><td>10</td><td>10</td><td>9</td></tr>
+<tr><td>2020</td><td>Panini Chronicles</td><td>Joe Burrow</td><td>Classics</td><td>#1</td><td>nan</td><td>Cincinnati Bengals</td><td>1000001</td><td>GEM 10</td><td>10</td><td>10</td><td>10</td><td>10</td></tr>
+<tr><td>2023</td><td>Panini Contenders</td><td>Bijan Robinson</td><td>Supernatural</td><td>#2</td><td>nan</td><td>Atlanta Falcons</td><td>1000002</td><td>GEM 10</td><td>10</td><td>10</td><td>10</td><td>10</td></tr>
+</tbody>
+    </table>
+
+    <script>
+        const searchInput = document.getElementById("searchInput");
+        searchInput.addEventListener("keyup", function() {{
+            const filter = searchInput.value.toLowerCase();
+            const rows = document.querySelectorAll("#cardTable tbody tr");
+            rows.forEach(row => {{
+                const serialCell = row.querySelector("td:nth-child(8)").innerText.toLowerCase();
+                row.style.display = serialCell.includes(filter) ? "" : "none";
+            }});
+        }});
+    </script>
+</body>
+</html>
